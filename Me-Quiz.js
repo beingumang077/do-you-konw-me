@@ -24,7 +24,7 @@ var questions=[
 var score =0;
 for(var i=0;i<questions.length;i++){
     var answer = readlineSync.question(questions[i].ques);
-    if(answer.toSmallCase()==questions[i].ans.toSmallCase()){
+    if(answer.toLowerCase()==questions[i].ans.toLowerCase()){
         score=score+1;
     }
     else{
